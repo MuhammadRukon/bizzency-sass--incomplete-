@@ -1,0 +1,69 @@
+.navbar {
+  background-color: $bizzency-white-clr;
+
+  &__navigation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include medium-device {
+      padding: 12px 50px;
+    }
+
+    &--nav ul li {
+      display: inline-block;
+      padding: 27px 12px;
+      @include transition(0.3s);
+
+      @include portrait-tablet {
+        display: none;
+      }
+
+      & a {
+        color: $bizzency-primary-clr;
+        @extend %common-typography;
+        @include transition(0.3s);
+      }
+
+      &:hover {
+        background-color: $bizzency-nav-hover-bg;
+
+        & a {
+          color: $bizzency-arrow-hover;
+        }
+      }
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+    &__buttons button {
+      color: $bizzency-nav-btn-clr;
+      background: $bizzency-white-clr;
+      border: 1px solid #dedede;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      line-height: 42px;
+      text-align: center;
+      cursor: pointer;
+      @include transition(0.3s);
+
+      & i {
+        font-size: 16px;
+      }
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+    &__buttons--search-btn {
+      @include portrait-tablet {
+        display: none;
+      }
+    }
+    &__buttons--search-btn:hover {
+      background: $bizzency-primary-clr;
+      color: $bizzency-arrow-hover;
+    }
+  }
+}

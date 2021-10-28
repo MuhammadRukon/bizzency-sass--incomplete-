@@ -1,0 +1,43 @@
+%common-typography {
+  font-family: $bizzency-secondary-font;
+  font-size: $bizzency-body-text-size;
+}
+
+%common-p-font {
+  font-family: $bizzency-secondary-font;
+}
+
+%title-intro {
+  font-family: $bizzency-secondary-font;
+  font-size: 14px;
+  color: $bizzency-primary-clr;
+  font-weight: 300;
+}
+
+%small-title {
+  font-family: $bizzency-primary-font;
+  font-size: 32px;
+  color: $bizzency-primary-clr;
+}
+
+%common-button {
+  background: $bizzency-white-clr;
+  padding: 2px 19px;
+  height: 50px;
+  color: $bizzency-primary-clr;
+  @extend %common-p-font;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid $bizzency-white-clr;
+  border-radius: 5px;
+  margin-top: 32px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-box-shadow: 5px 5px 27px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 27px 5px rgba(0, 0, 0, 0.1);
+  &:hover {
+    background: $bizzency-arrow-hover;
+    border-color: $bizzency-arrow-hover;
+  }
+}

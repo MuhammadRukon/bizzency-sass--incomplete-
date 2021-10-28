@@ -1,0 +1,32 @@
+.header-top {
+  background-color: $bizzency-primary-clr;
+  padding: 12px 0;
+
+  // @include tablet {
+  //   padding: 12px 50px;
+  // }
+  // @include portrait-tablet {
+  //   padding: 12px 50px;
+  // }
+  @include medium-device {
+    padding: 12px 50px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    &--left,
+    &--right {
+      color: $bizzency-white-clr;
+      @extend %common-typography;
+      font-weight: 500;
+    }
+  }
+}

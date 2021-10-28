@@ -1,0 +1,9 @@
+.skill-part__heading--title-intro {
+  @extend %title-intro;
+}
+.skill-part__heading--small-title {
+  @extend %small-title;
+}
+.skill-part__heading--description {
+  @extend %common-p-font;
+}

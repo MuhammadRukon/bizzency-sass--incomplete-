@@ -1,0 +1,34 @@
+//use css variable as sass variable value
+// $bizzency-primary-color: var($bizzency-primary-color);
+
+$bizzency-primary-clr: #0f2f44;
+$bizzency-secondary-clr: #8484bf;
+$bizzency-deep-brown: #5d3b15;
+$bizzency-deep-green: #344a1f;
+$bizzency-deep-purple: #392960;
+$bizzency-section-bg: #f5f5f5;
+$bizzency-arrow-hover: #fcc512;
+$bizzency-white-clr: #ffffff;
+$bizzency-social-icon: #777777;
+$bizzency-deep-gray: #e9e9e9;
+$bizzency-nav-hover-bg: #fff9e6;
+$bizzency-nav-btn-clr: #999999;
+
+/* Global font family for bizzency */
+$bizzency-primary-font: "Abril Fatface";
+$bizzency-secondary-font: "Open Sans", sans-serif;
+
+/*global typography variables */
+$bizzency-body-text-size: 16px;
+
+/*responsive mixins*/
+$huge-device: 1600px;
+$big-device: 1300px;
+$medium-device: 1199px;
+$desktop-width: 1024px;
+$portrait-tablet: 992px;
+$tablet: 768px;
+$mobile: 575px;
+$small-tablet: 600px;
+$small-device: 480px;
+$tiny-device: 320px;

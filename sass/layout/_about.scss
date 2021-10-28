@@ -1,0 +1,47 @@
+.about-part {
+  padding: 100px 0;
+
+  &__container {
+    display: flex;
+    @include medium-device {
+      padding: 30px;
+    }
+
+    @include desktop-width {
+      padding: 50px;
+      display: block;
+      text-align: center;
+    }
+
+    &__left--title-intro {
+      @extend %title-intro;
+    }
+  }
+}
+.about-part__container__left {
+  @include desktop-width {
+    text-align: left;
+  }
+}
+
+.about-part__container__left--small-title {
+  @extend %small-title;
+}
+
+.about-part__container__left--description {
+  @extend %common-typography;
+  font-weight: 300;
+  padding-top: 30px;
+  line-height: 1.5;
+}
+.about-part__container__left ul {
+  @extend %common-typography;
+  padding: 15px;
+  line-height: 2.7;
+}
+.about-part__container__left--btn-1 {
+  @extend %common-button;
+}
+.about-part__container__left--btn-2 {
+  @extend %common-button;
+}

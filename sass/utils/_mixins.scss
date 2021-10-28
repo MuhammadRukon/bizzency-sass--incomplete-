@@ -1,0 +1,45 @@
+@mixin transition($time) {
+  transition: all $time;
+  -webkit-transition: $time;
+}
+
+@mixin heading($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+  @extend %common-heading-style;
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin portrait-tablet {
+  @media (max-width: #{$portrait-tablet}) {
+    @content;
+  }
+}
+
+@mixin medium-device {
+  @media (max-width: #{$medium-device}) {
+    @content;
+  }
+}
+
+@mixin big-device {
+  @media (max-width: #{$big-device}) {
+    @content;
+  }
+}
+@mixin desktop-width {
+  @media (max-width: #{$desktop-width}) {
+    @content;
+  }
+}

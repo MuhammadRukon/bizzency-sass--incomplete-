@@ -1,0 +1,317 @@
+/* Global font family for bizzency */
+/*global typography variables */
+/*responsive mixins*/
+.header-top__wrapper--left, .header-top__wrapper--right, .navbar__navigation-container--nav ul li a, .about-part__container__left--description, .about-part__container__left ul {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+}
+
+.banner-part__banner-content__btns--explore, .about-part__container__left--btn-1, .about-part__container__left--btn-2, .banner-part__banner-content--subtitle-top, .banner-part__banner-content--subtitle-bottom, .banner-part__banner-content--description, .banner-part__banner-content__btns--play, .banner-part__banner-content__btns--play:hover, .skill-part__heading--description {
+	font-family: "Open Sans", sans-serif;
+}
+
+.about-part__container__left--title-intro, .skill-part__heading--title-intro {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	color: #0f2f44;
+	font-weight: 300;
+}
+
+.about-part__container__left--small-title, .skill-part__heading--small-title {
+	font-family: "Abril Fatface";
+	font-size: 32px;
+	color: #0f2f44;
+}
+
+.banner-part__banner-content__btns--explore, .about-part__container__left--btn-1, .about-part__container__left--btn-2 {
+	background: #ffffff;
+	padding: 2px 19px;
+	height: 50px;
+	color: #0f2f44;
+	font-size: 20px;
+	font-weight: 500;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	margin-top: 32px;
+	margin-right: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+	-webkit-box-shadow: 5px 5px 27px 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 5px 5px 27px 5px rgba(0, 0, 0, 0.1);
+}
+
+.banner-part__banner-content__btns--explore:hover, .about-part__container__left--btn-1:hover, .about-part__container__left--btn-2:hover {
+	background: #fcc512;
+	border-color: #fcc512;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	display: inline-block;
+}
+
+ul,
+ol {
+	list-style-type: none;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.header-top {
+	background-color: #0f2f44;
+	padding: 12px 0;
+}
+
+@media (max-width: 1199px) {
+	.header-top {
+		padding: 12px 50px;
+	}
+}
+
+.header-top__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media (max-width: 575px) {
+	.header-top__wrapper {
+		flex-direction: column;
+		text-align: center;
+		line-height: 1.4;
+	}
+}
+
+.header-top__wrapper--left, .header-top__wrapper--right {
+	color: #ffffff;
+	font-weight: 500;
+}
+
+.navbar {
+	background-color: #ffffff;
+}
+
+.navbar__navigation-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (max-width: 1199px) {
+	.navbar__navigation-container {
+		padding: 12px 50px;
+	}
+}
+
+.navbar__navigation-container--nav ul li {
+	display: inline-block;
+	padding: 27px 12px;
+	transition: all 0.3s;
+	-webkit-transition: 0.3s;
+}
+
+@media (max-width: 992px) {
+	.navbar__navigation-container--nav ul li {
+		display: none;
+	}
+}
+
+.navbar__navigation-container--nav ul li a {
+	color: #0f2f44;
+	transition: all 0.3s;
+	-webkit-transition: 0.3s;
+}
+
+.navbar__navigation-container--nav ul li:hover {
+	background-color: #fff9e6;
+}
+
+.navbar__navigation-container--nav ul li:hover a {
+	color: #fcc512;
+}
+
+.navbar__navigation-container--nav ul li:not(:last-child) {
+	margin-right: 15px;
+}
+
+.navbar__navigation-container__buttons button {
+	color: #999999;
+	background: #ffffff;
+	border: 1px solid #dedede;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	line-height: 42px;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.3s;
+	-webkit-transition: 0.3s;
+}
+
+.navbar__navigation-container__buttons button i {
+	font-size: 16px;
+}
+
+.navbar__navigation-container__buttons button:not(:last-child) {
+	margin-right: 20px;
+}
+
+@media (max-width: 992px) {
+	.navbar__navigation-container__buttons--search-btn {
+		display: none;
+	}
+}
+
+.navbar__navigation-container__buttons--search-btn:hover {
+	background: #0f2f44;
+	color: #fcc512;
+}
+
+.banner-part {
+	background-image: url(./../../assets/images/banner.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right top;
+	padding: 150px;
+}
+
+@media (max-width: 992px) {
+	.banner-part {
+		padding: 50px;
+	}
+}
+
+.banner-part__banner-content--subtitle-top {
+	font-size: 50px;
+	font-weight: 300;
+	color: #0f2f44;
+}
+
+.banner-part__banner-content--title {
+	font-size: 80px;
+	font-family: "Abril Fatface";
+	color: #0f2f44;
+	line-height: 50px;
+	margin-bottom: 16px;
+}
+
+@media (max-width: 575px) {
+	.banner-part__banner-content--title {
+		font-size: 65px;
+	}
+}
+
+.banner-part__banner-content--subtitle-bottom {
+	font-size: 32px;
+	color: #aab0d8;
+	font-weight: 300;
+	letter-spacing: 16px;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 575px) {
+	.banner-part__banner-content--subtitle-bottom {
+		letter-spacing: 9px;
+	}
+}
+
+.banner-part__banner-content--description {
+	font-size: 14px;
+	width: 49%;
+	line-height: 25px;
+}
+
+@media (max-width: 1199px) {
+	.banner-part__banner-content--description {
+		width: 60%;
+	}
+}
+
+@media (max-width: 768px) {
+	.banner-part__banner-content--description {
+		width: 72%;
+	}
+}
+
+.banner-part__banner-content__btns--explore {
+	background: #8484bf;
+	border-color: #8484bf;
+	color: #ffffff;
+}
+
+.banner-part__banner-content__btns--explore:hover {
+	color: #8484bf;
+	background: #ffffff;
+	border-color: #8484bf;
+}
+
+.banner-part__banner-content__btns--play {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	font-size: 20px;
+	font-weight: 500;
+	background: #ffffff;
+	color: #8484bf;
+	border: 1px solid #ffffff;
+	margin-top: 32px;
+	margin-right: 20px;
+	padding-top: 13px;
+	cursor: pointer;
+	transition: all 0.3s;
+	-webkit-transition: 0.3s;
+}
+
+.banner-part__banner-content__btns--play:hover {
+	color: #ffffff;
+	background: #8484bf;
+}
+
+.about-part {
+	padding: 100px 0;
+}
+
+.about-part__container {
+	display: flex;
+}
+
+@media (max-width: 1199px) {
+	.about-part__container {
+		padding: 30px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.about-part__container {
+		padding: 50px;
+		display: block;
+		text-align: center;
+	}
+}
+
+@media (max-width: 1024px) {
+	.about-part__container__left {
+		text-align: left;
+	}
+}
+
+.about-part__container__left--description {
+	font-weight: 300;
+	padding-top: 30px;
+	line-height: 1.5;
+}
+
+.about-part__container__left ul {
+	padding: 15px;
+	line-height: 2.7;
+}

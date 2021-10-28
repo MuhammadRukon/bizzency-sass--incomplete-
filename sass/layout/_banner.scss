@@ -1,0 +1,84 @@
+.banner-part {
+  background-image: url(./../../assets/images/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  padding: 150px;
+  @include portrait-tablet {
+    padding: 50px;
+  }
+
+  &__banner-content--subtitle-top {
+    font-size: 50px;
+    font-weight: 300;
+    @extend %common-p-font;
+    color: $bizzency-primary-clr;
+  }
+  &__banner-content--title {
+    font-size: 80px;
+    font-family: $bizzency-primary-font;
+    color: $bizzency-primary-clr;
+    line-height: 50px;
+    margin-bottom: 16px;
+
+    @include mobile {
+      font-size: 65px;
+    }
+  }
+  &__banner-content--subtitle-bottom {
+    @extend %common-p-font;
+    font-size: 32px;
+    color: #aab0d8;
+    font-weight: 300;
+    letter-spacing: 16px;
+    margin-bottom: 10px;
+    @include mobile {
+      letter-spacing: 9px;
+    }
+  }
+  &__banner-content--description {
+    font-size: 14px;
+    @extend %common-p-font;
+    width: 49%;
+    line-height: 25px;
+
+    @include medium-device {
+      width: 60%;
+    }
+    @include tablet {
+      width: 72%;
+    }
+  }
+  &__banner-content__btns--explore {
+    @extend %common-button;
+    background: $bizzency-secondary-clr;
+    border-color: $bizzency-secondary-clr;
+    color: $bizzency-white-clr;
+    &:hover {
+      color: $bizzency-secondary-clr;
+      background: $bizzency-white-clr;
+      border-color: $bizzency-secondary-clr;
+    }
+  }
+  &__banner-content__btns--play {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    @extend %common-p-font;
+    font-size: 20px;
+    font-weight: 500;
+    background: $bizzency-white-clr;
+    color: $bizzency-secondary-clr;
+    border: 1px solid $bizzency-white-clr;
+    margin-top: 32px;
+    margin-right: 20px;
+    padding-top: 13px;
+    cursor: pointer;
+    @include transition(0.3s);
+    &:hover {
+      @extend %common-p-font;
+      color: $bizzency-white-clr;
+      background: $bizzency-secondary-clr;
+    }
+  }
+}
