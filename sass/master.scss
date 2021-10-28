@@ -1,8 +1,7 @@
 @import "./utils/variable", "./utils/extends", "./utils/mixins";
 
-//font awesome
-// @import "./../assets/scss/fontawesome.scss";
-// @import "./../assets/scss/solid.scss";
+@import "./../assets/scss/fontawesome.scss";
+@import "./../assets/scss/solid.scss";
 
 @import "./base/reset", "./layout/header-top", "./layout/header",
   "./layout/banner", "./layout/about", "./layout/skill";
